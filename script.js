@@ -45,7 +45,7 @@ function sendInput(command) {
 		body: JSON.stringify({
 			token: token,
 			mode: terminalMode,
-			command: command,
+			text: command,
 		}),
 	})
 		.then((response) => response.json())
